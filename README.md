@@ -2,7 +2,7 @@
 > Check if the current month is equalt to the given month
 
 ## Install
-```
+```sh
 	$ npm install is-month --save
 
 	#or 
