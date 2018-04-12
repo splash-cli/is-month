@@ -25,7 +25,7 @@ Returns a boolean.
 Type: `String`
 Month to check
 
-### today
+#### today
 Type: `Date`
 Default: `new Date()`
 Date to check
@@ -36,7 +36,7 @@ Returns a promise for a boolean.
 Type: `String`
 Month to check
 
-### today
+#### today
 Type: `Date`
 Default: `new Date()`
 Date to check
