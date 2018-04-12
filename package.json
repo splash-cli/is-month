@@ -15,8 +15,7 @@
   ],
   "scripts": {
     "test": "ava",
-    "build": "babel src -d build",
-    "prepublish": "rm -rf build",
+    "build": "babel src -d build"
   },
   "repository": {
     "type": "git",
@@ -30,9 +29,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1"
   },
-  "private": false,
+  "homepage": "https://github.com/splash-cli/isMonth#readme",
   "bugs": {
     "url": "https://github.com/splash-cli/isMonth/issues"
-  },
-  "homepage": "https://github.com/splash-cli/isMonth#readme"
+  }
 }
