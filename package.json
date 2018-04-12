@@ -1,0 +1,32 @@
+{
+  "name": "is-month",
+  "version": "1.0.0",
+  "description": "Check if the current month is equalt to the given month",
+  "main": "build/index.js",
+  "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
+  "license": "MIT",
+  "keywords": [
+    "month",
+    "months",
+    "days",
+    "date",
+    "dates",
+    "parser"
+  ],
+  "scripts": {
+    "build": "babel src -d build",
+    "test": "npm run build && ava test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/splash-cli/isMonth"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
