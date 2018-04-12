@@ -5,7 +5,7 @@
 ```sh
 	$ npm install is-month --save
 
-	#or 
+	#or
 
 	$ yarn add is-month
 ```
@@ -14,7 +14,16 @@
 ```js
 	import isMonth from 'is-month';
 
-	console.log( isMonth('april', { today: new Date('2018/04/12') })  ) //=> true
+	isMonth('april', { today: new Date('2018/04/12') }) //=> true
+	isMonth.promise('april', { today: new Date('2018/04/12') })
+		.then(month => {
+			console.log('We are in April!')
+		})
+		.catch(err => {
+			if (err) {
+				throw err;
+			}
+		})
 ```
 
 ## Api
