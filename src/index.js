@@ -12,6 +12,8 @@ import isUndefined from 'lodash/isUndefined';
  * 
  * @param {String} month 
  * @param {Date} today
+ * 
+ * @returns Boolean
  */
 function isMonth(month, { today } = { today: new Date() }) {
 	const months = [
@@ -28,6 +30,16 @@ function isMonth(month, { today } = { today: new Date() }) {
 	}
 
 	return false;
+}
+
+isMonth.promise = (month, { today } = { today: new Date() }) => {
+	return new Promise((resolve, reject) => {
+		if ( isMonth(month, { today }) ) {
+			resolve(true)
+		}
+
+		reject(false)
+	})
 }
 
 module.exports = isMonth;
