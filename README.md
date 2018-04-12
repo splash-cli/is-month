@@ -14,7 +14,7 @@
 ```js
 	import isMonth from 'is-month';
 
-	console.log( isMonth('April', { today: new Date('12/04/2018') }) ) //=> true
+	console.log( isMonth('april', { today: new Date('2018/04/12') })  ) //=> true
 ```
 
 ## Api
