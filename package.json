@@ -13,10 +13,14 @@
     "dates",
     "parser"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "ava",
+    "test": "ava test.js",
     "build": "babel src -d build",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -28,7 +32,8 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "np": "*"    
   },
   "homepage": "https://github.com/splash-cli/isMonth#readme",
   "bugs": {
