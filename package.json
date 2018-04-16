@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "test": "ava",
-    "build": "babel src -d build"
+    "build": "babel src -d build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
