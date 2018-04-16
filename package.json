@@ -1,6 +1,6 @@
 {
   "name": "@splash-cli/is-month",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check if the current month is equalt to the given month",
   "main": "build/index.js",
   "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
