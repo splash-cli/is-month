@@ -33,7 +33,7 @@
     "ava": "^0.25.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "np": "*"    
+    "np": "^2.20.1"
   },
   "homepage": "https://github.com/splash-cli/isMonth#readme",
   "bugs": {
