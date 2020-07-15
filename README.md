@@ -1,6 +1,8 @@
 # is-month
 > Check if the current month is equalt to the given month
 
+![Node.js CI](https://github.com/splash-cli/is-month/workflows/Node.js%20CI/badge.svg)
+
 ## Install
 ```sh
 	$ npm install is-month --save
