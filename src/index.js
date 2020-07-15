@@ -15,31 +15,15 @@ import isUndefined from 'lodash/isUndefined';
  * 
  * @returns Boolean
  */
-function isMonth(month, { today } = { today: new Date() }) {
-	const months = [
+const isMonth = (month, { today } = { today: new Date() }) => [
 		'january', 'february',
 		'march', 'april',
 		'may', 'june',
 		'july', 'august',
 		'september', 'october',
 		'november', 'december'
-	];
+	][today.getMonth()].toLowerCase().trim() === month.toLowerCase().trim();
 
-	if ( months[today.getMonth()].toLowerCase().trim() === month.toLowerCase().trim()) {
-		return true;
-	}
-
-	return false;
-}
-
-isMonth.promise = (month, { today } = { today: new Date() }) => {
-	return new Promise((resolve, reject) => {
-		if ( isMonth(month, { today }) ) {
-			resolve(true)
-		}
-
-		reject(false)
-	})
-}
+isMonth.promise = (month, { today } = { today: new Date() }) => Promise.resolve(isMonth(month, { today }));
 
 module.exports = isMonth;
